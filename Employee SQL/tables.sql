@@ -6,18 +6,18 @@ select * from title;
 
 create table Salaries(
 emp_no varchar(10),
-Salary int);
+Salary varchar (10));
 
 select * from Salaries
 
 create table employees(
-emp_no int,
+emp_no varchar (10),
 emp_title varchar(5),
-"birth date" varchar (10),
+birth_date varchar (10),
 first_name varchar (30),
 last_name varchar (30),
 sex varchar (1), 
-hire_date varchar (10));
+hire_date date);
 
 select * from employees
 
