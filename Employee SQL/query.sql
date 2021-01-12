@@ -17,5 +17,12 @@ where hire_date >= 01/01/1986 and hire_date <= 12/31/1986
 SELECT dept_managers.dept_no, departments.dept_name, dept_managers.emp_no, employees.last_name, employees.first_name
 FROM employees 
 LEFT JOIN dept_managers ON employees.emp_no = dept_managers.dept_no
-Left join departments on employees.emp_no = departments.dept_no
+right join departments on employees.emp_no = departments.dept_no
 
+select employees.emp_no, employees.last_name, employees.first_name, departments.dept_name
+from employees
+left join departments on employees.emp_no = departments.dept_no
+
+select first_name, last_name, sex
+from employees
+where first_name = 'hercules'

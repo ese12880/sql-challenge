@@ -1,17 +1,17 @@
 create table title(
-"title_ID" varchar(5),
+"title_ID"  varchar(5) primary key,
 title varchar(30));
 
 select * from title;
 
 create table Salaries(
-emp_no varchar(10),
+emp_no varchar(10) primary key,
 Salary varchar (10));
 
 select * from Salaries
 
 create table employees(
-emp_no varchar (10),
+emp_no varchar (10) primary key,
 emp_title varchar(5),
 birth_date varchar (10),
 first_name varchar (30),
@@ -23,7 +23,8 @@ select * from employees
 
 create table dept_managers(
 dept_no varchar(10),
-emp_no varchar(10));
+emp_no varchar(10)primary key);
+
 
 select * from dept_managers
 
