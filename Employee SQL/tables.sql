@@ -23,7 +23,7 @@ select * from employees
 
 create table dept_managers(
 dept_no varchar(10),
-emp_no varchar(10)primary key);
+emp_no varchar(10)primary key)
 
 
 select * from dept_managers
@@ -32,9 +32,11 @@ create table dept_employees(
 emp_no varchar(10),
 dept_no varchar(10));
 
+
 select * from dept_employees
 
 create table departments(
 dept_no varchar(10),
 dept_name varchar(30));
 
+select * from departments
